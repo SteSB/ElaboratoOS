@@ -13,5 +13,8 @@ union semun {
  * index of a semaphore in the set, sem_op is the operation performed on sem_num
  */
 void semOp (int semid, unsigned short sem_num, short sem_op);
+void quitSem(int semid);
+int createSem(int numSem);
+void initSem(int semid, int n, unsigned short v[]);
 
 #endif

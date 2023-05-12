@@ -9,6 +9,5 @@
 
 void errGeneric();
 void errCustom(const char *msg);
-void endGameError(const char *msg);
 
 #endif 

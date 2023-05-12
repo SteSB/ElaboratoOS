@@ -7,6 +7,6 @@
 #include <errno.h>
 #include <stdlib.h>
 
-void printMatrix(int dim1, int dim2, char m[dim1][dim2]);
+//void printMatrix(int dim1, int dim2, char m[][]);
 
 #endif 

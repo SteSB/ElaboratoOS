@@ -1,4 +1,4 @@
-#include "./header/errors.h"
+#include "../inc/errors.h"
 
 #include <stdio.h>
 #include <errno.h>
@@ -10,11 +10,6 @@ void errGeneric() {
 }
 
 void errCustom(const char *msg) {
-    perror(msg);
-    exit(1);
-}
-
-void endGameError(const char *msg) {
     perror(msg);
     exit(1);
 }
