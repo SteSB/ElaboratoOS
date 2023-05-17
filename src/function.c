@@ -1,14 +1,20 @@
 #include "../inc/function.h"
+#include <string.h>
 
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
 
-/*void printMatrix(int dim1, int dim2, char m[dim1][dim2]) {
-    for(int i=0; i<dim1; i++) {
-        for(int j=0; j<dim2; j++) {
-            printf(" %c |", m[dim1][dim2]);
+void printMatrix( int r, int c, char *m) {
+    printf("\n");
+    for(int i=0; i<c; i++)
+        printf(" %i  ", i);
+    printf("\n");
+    for (int i = 0; i < r; ++i) {
+        for (int j = 0; j < c; ++j) {
+            printf(" %c |", m[i*c+j] != '\0' ? m[i*c+j] : ' ');
         }
         printf("\n");
     }
-}*/
+    printf("\n");
+}
